@@ -1,0 +1,107 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/scripts.js" type="module" defer></script>
+    <link href="./css/estilos.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+</head>
+<body>
+    <header>
+    <img src="./images/7738.jpg" alt="" width="100px" height="100px;">
+      <nav>
+        <ul>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Avisos</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+      <p class="importante">ADMINISTRACIÓN</p>
+      <div class="img">
+        <img src="./images/autos-mas-confiables.jpeg" alt=""  >
+      </div>
+     
+     
+     
+    <div id="contenedor" class="contenedor">
+        
+        <div class="divForm">
+        <fieldset>
+            <legend>Información del anuncio</legend>
+            <form action="" method="">
+                <input type="hidden" name="id">
+                <label for="txtTitulo">TÍTULO</label>
+                <input type="text" placeholder="Título" id="txtTitulo" name="titulo" required>
+
+                <label for="rdioTransaccion">TRANSACCIÓN</label>
+                <select id="transaccion" name="transaccion" >
+                    <option value="ElegirTransaccion">----Elegir Transaccion----</option>
+                    <option value="Venta">Venta</option>
+                    <option value="Alquiler">Alquiler</option>
+                    <option value="Permuta">Permuta</option>
+                  </select>
+                
+                <label for="txtDescripcion">DESCRIPCIÓN</label>
+                <input type="text" placeholder="Descripción" id="txtDescripcion" name="descripcion" required>
+
+                <label for="precio">PRECIO</label>
+                <input type="number" placeholder="Precio" id="txtPrecio" name="precio">
+
+                <div id="divContieneEspecificaciones">
+                
+               <img src="./assets/puerta-del-auto.png" width="25px" height="25px" > <input type="number" placeholder="Puertas" id="txtCantidadBaños" name="puertas" required class="especificaciones">
+            
+               <img src="./assets/velocimetro.png" width="25px" height="25px" >
+                <input type="number" placeholder="KMs" id="kilometros" name="kilometros" required>
+
+                <img src="./assets/coche.png" width="25px" height="25px">
+                <input type="number" placeholder="Potencia" id="potencia" name="potencia" required>
+
+            </div>
+                <br>
+                <input type="submit" id="Submit" value="Guardar" class="button button1">
+            </form>
+        </fieldset>
+    </div>
+    <div class="divCentrar">
+        <div id="spinner-container"></div>
+    </div>
+   
+
+    <div class="divCentrar"> <div id="divBotones">
+        <input type="button" value="Guardar" id="btnModificar"  class="button button2">
+        <input type="button" value="Eliminar" id="btnEliminar" class="button button3">
+        <input type="button" value="Cancelar" id="btnCancelar" class="button button5">
+    </div></div>
+
+   
+    <div class="divCentrar">
+       
+        <div id="divTabla">
+
+        </div>
+    </div>
+        
+    </div>
+
+    <footer>
+        
+       <nav>
+          <ul>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Avisos</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+        <p>
+            todos los derechos reservados &copy;
+          </p>
+      </footer>
+</body>
+</html>
